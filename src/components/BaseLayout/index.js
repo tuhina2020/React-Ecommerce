@@ -19,14 +19,15 @@ export default class BaseLayout extends Component {
     this.state = {
       index: 0,
     };
+    this.incrementIndex = this.incrementIndex.bind(this);
   }
 
-  incrementIndex = () => {
+  incrementIndex() {
     const newIndex = this.state.index + 1;
     this.setState({ index: newIndex })
   }
 
-  componentDidMount = () => {
+  componentDidMount() {
     setInterval(this.incrementIndex, 3000);
   }
 

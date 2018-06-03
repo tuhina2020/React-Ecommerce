@@ -4,7 +4,7 @@ import {Icon} from 'react-materialize';
 import { Link } from 'react-router-dom';
 //Internals
 import PRODUCTS from '../Data';
-import './styles.css';
+import './index.css';
 
 class Accessories extends Component {
   render() {

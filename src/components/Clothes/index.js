@@ -1,7 +1,7 @@
 //Dependencies
 import React, { Component } from 'react';
 //Internals
-import './styles.css';
+import './index.css';
 import ClothesItems from './ClothesItems';
 
 class Clothes extends Component {

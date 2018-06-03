@@ -5,11 +5,11 @@ import map from 'lodash/map';
 //Internals
 import './index.css';
 
-class CartProducts extends Component {
-  static propTypes = {
-    addItemToCart: PropTypes.func.isRequired,
-  };
+const propTypes = {
+  addItemToCart: PropTypes.func.isRequired,
+};
 
+class CartProducts extends Component {
   render() {
     return(
       <div>
@@ -23,5 +23,7 @@ class CartProducts extends Component {
     );
   }
 }
+
+CartProducts.propTypes = propTypes;
 
 export default CartProducts;

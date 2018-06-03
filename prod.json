@@ -1,0 +1,15 @@
+{
+  "apps" : [
+    {
+      "name": "server2",
+      "exec_mode": "cluster",
+      "script": "./server.js",
+      "instances": 1,
+      "args": ["--production"],
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "4040"
+      }
+    }
+  ]
+}
