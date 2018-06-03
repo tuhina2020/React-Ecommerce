@@ -2,12 +2,11 @@
 import React from 'react';
 //Internals
 import Products from '../Items';
-import Designers from '../Designers';
-// import './index.css';
+import './index.css';
 
 const Collection = () => (
   <div className="content">
-    <Designers />
+    <Products />
   </div>
 );
 

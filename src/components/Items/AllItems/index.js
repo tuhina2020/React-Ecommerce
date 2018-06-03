@@ -4,7 +4,7 @@ import { Icon } from 'react-materialize';
 import { Link } from 'react-router-dom';
 import map from 'lodash/map';
 //Internals
-import PRODUCTS from '../../Data';
+import PRODUCTS from '../../Data/products.js';
 
 const AllItems = () => (
   <div className="items">

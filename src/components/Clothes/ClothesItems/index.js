@@ -3,7 +3,7 @@ import React from 'react';
 import { Icon } from 'react-materialize';
 import { Link } from 'react-router-dom';
 //Internals
-import PRODUCTS from '../../Data';
+import PRODUCTS from '../../Data/products.js';
 
 const ClothesItems = () => (
   <div className="items">

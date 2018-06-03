@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {Icon} from 'react-materialize';
 import { Link } from 'react-router-dom';
 //Internals
-import PRODUCTS from '../Data';
+import PRODUCTS from '../Data/products.js';
 import './index.css';
 
 class Accessories extends Component {

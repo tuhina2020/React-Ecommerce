@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // Externals
 import Navbar from './components/NavBar';
 import Header from './components/Header';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import './index.css';
 
 const classNames = [
@@ -43,7 +43,6 @@ export default class BaseLayout extends Component {
         <div className="content">
           {this.props.children}
         </div>
-        <Footer />
       </div>
     )
   }

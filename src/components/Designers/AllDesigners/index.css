@@ -1,0 +1,23 @@
+.designer-details {
+  height: 300px;
+  position: relative;
+  width: 500px;
+  background-color: #eba184;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.designers {
+	display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.designer-details .designer-text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 20px;
+    color: black;
+}

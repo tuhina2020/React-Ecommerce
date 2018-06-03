@@ -4,7 +4,7 @@ import find from 'lodash/find';
 import { Link } from 'react-router-dom';
 import { Icon } from 'react-materialize';
 //Internals
-import PRODUCTS from '../Data';
+import PRODUCTS from '../Data/products.js';
 import './index.css';
 
 class ShowProduct extends Component {
