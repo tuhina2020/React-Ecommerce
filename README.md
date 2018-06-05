@@ -20,10 +20,12 @@ steps to run the website
 
 
 3. Build the files
+
 	`npm run build:prod`
 
 
 4. Start pm2 process
+
 	`pm2 run prod.json`
 
 5. open the site on http://localhost:4040
