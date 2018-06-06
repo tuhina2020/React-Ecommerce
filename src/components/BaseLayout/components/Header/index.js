@@ -9,7 +9,7 @@ const Header = () => (
     <h1 id="header-title">Shop Now</h1>
     <div className="links-header">
       <p><NavLink activeClassName="selected" className="nav-link-header" to="/designers">DESIGNERS</NavLink></p>
-      <p><NavLink activeClassName="selected" className="nav-link-header" to="/women">COLLECTION</NavLink></p>
+      <p><NavLink activeClassName="selected" className="nav-link-header" to="/collections">COLLECTION</NavLink></p>
     </div>
   </div>
 )

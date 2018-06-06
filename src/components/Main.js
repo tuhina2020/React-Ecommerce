@@ -9,6 +9,8 @@ import Men from './Men';
 import Clothes from './Clothes';
 import Accessories from './Accessories';
 import ShowProduct from './ShowProduct';
+import Designers from './Designers';
+import Items from './Items';
 
 export default class Main extends React.Component {
 	constructor(props) {
@@ -25,6 +27,8 @@ export default class Main extends React.Component {
 	        <Route path="/men" component={Men} />
 	        <Route path="/clothes" component={Clothes}  />
 	        <Route path="/accessories" component={Accessories} />
+	        <Route path="/designers" component={Designers} />
+	        <Route path="/collections" component={Items} />
 	        <Route exact path="/products/:id" component={ShowProduct} />
 	      </Switch>
 	    </BaseLayout>
