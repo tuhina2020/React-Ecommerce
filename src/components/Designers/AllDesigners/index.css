@@ -1,23 +1,33 @@
 .designer-details {
-  height: 400px;
-  position: relative;
-  width: 545;
-  background-color: #eba184;
   opacity: 0.8;
-  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 2em;
+  position: relative;
+  bottom: 1em;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }
 
 .designers {
 	display: flex;
-    margin: 30px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  margin: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .designer-details .designer-text {
-    position: absolute;
-    bottom: 0;
     text-align: center;
-    left: 20px;
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 0.5em;
+}
+
+.designer-img {
+  margin: 1em;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  margin-bottom: 0.25em;
 }

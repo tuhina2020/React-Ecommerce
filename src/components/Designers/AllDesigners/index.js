@@ -12,13 +12,12 @@ const AllDesigners = () => (
     {map(DESIGNERS, (designer)=> (
       <div key={designer.id} className="designer">
         <Link to={`/designers/${designer.id}`}>
-        	<div className="designer-img">
-	        </div> 
-	        <div className="designer-details">
+          <div className="designer-details">
+        	  <img className="designer-img" alt="image" src={designer.image}/>
             <div className="designer-text">
-  	          <h3 id="designer-name">{designer.name}</h3>
-  	          <h4 id="designer-description">{designer.description}</h4>
-  	          <h4 id="designer-location">{designer.location}</h4>
+  	          <div id="designer-name">{designer.name}</div>
+  	          <div id="designer-description">{designer.description}</div>
+              <div id="designer-cta">{designer.cta}</div>
             </div>
 	        </div>
         </Link>

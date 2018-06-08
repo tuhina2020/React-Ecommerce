@@ -8,6 +8,7 @@ class Products extends Component {
   render() {
     return (
       <div className="items-wrapper">
+      	<div className="trending-boutiques">trending boutiques</div>
         <AllDesigners />
       </div>
     );

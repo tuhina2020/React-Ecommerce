@@ -26,6 +26,6 @@ steps to run the website
 
 4. Start pm2 process
 
-	`pm2 run prod.json`
+	`pm2 start prod.json`
 
 5. open the site on http://localhost:4040

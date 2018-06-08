@@ -11,7 +11,8 @@
 #header-title {
   font-weight: lighter;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 255);
 }
 
 .links-header {
