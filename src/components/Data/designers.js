@@ -40,7 +40,7 @@ const designers = [
 	//  cta: "SHOP NOW"
 	// },
 	{
-		id: 6,
+		id: 4,
 		name: "HOMBRO",
 		description: "",
 		image: "https://ae01.alicdn.com/kf/HTB1IgopIpXXXXaBXXXXq6xXFXXXD/Red-boat-neck-del-hombro-corto-de-encaje-vestidos-coctel-asim-trico-media-manga-prom-vestidos.jpg",

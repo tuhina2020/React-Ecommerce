@@ -4,11 +4,10 @@ import { Icon } from 'react-materialize';
 import { Link } from 'react-router-dom';
 import map from 'lodash/map';
 //Internals
-import PRODUCTS from '../../Data/products.js';
 
-const AllItems = () => (
+const AllItems = ({products}) => (
   <div className="items">
-    {map(PRODUCTS, (product)=> (
+    {map(products, (product)=> (
       <div key={product.id} className="item">
         <Link to={`/products/${product.id}`}>
         <div className="product-img">

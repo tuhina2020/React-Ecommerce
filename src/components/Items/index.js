@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 //Internals
 import AllItems from './AllItems';
 import './index.css';
+import products from '../Data/products.js';
 
 class Products extends Component {
   render() {
@@ -11,7 +12,7 @@ class Products extends Component {
         <div className="items-title">
           <h4>All Items</h4>
         </div>
-        <AllItems />
+        <AllItems products={products}/>
       </div>
     );
   }

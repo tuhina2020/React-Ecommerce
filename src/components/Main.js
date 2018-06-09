@@ -9,6 +9,7 @@ import Men from './Men';
 import Clothes from './Clothes';
 import Accessories from './Accessories';
 import ShowProduct from './ShowProduct';
+import ShowDesigner from './ShowDesigner';
 import Designers from './Designers';
 import Items from './Items';
 
@@ -30,6 +31,7 @@ export default class Main extends React.Component {
 	        <Route path="/designers" component={Designers} />
 	        <Route path="/collections" component={Items} />
 	        <Route exact path="/products/:id" component={ShowProduct} />
+	        <Route exact path="/designers/:id" component={ShowDesigner} />
 	      </Switch>
 	    </BaseLayout>
 	  </BrowserRouter>);
