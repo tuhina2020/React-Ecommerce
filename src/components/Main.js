@@ -28,10 +28,10 @@ export default class Main extends React.Component {
 	        <Route path="/men" component={Men} />
 	        <Route path="/clothes" component={Clothes}  />
 	        <Route path="/accessories" component={Accessories} />
+	        <Route exact path="/designers/:id" component={ShowDesigner} />
 	        <Route path="/designers" component={Designers} />
 	        <Route path="/collections" component={Items} />
 	        <Route exact path="/products/:id" component={ShowProduct} />
-	        <Route exact path="/designers/:id" component={ShowDesigner} />
 	      </Switch>
 	    </BaseLayout>
 	  </BrowserRouter>);
