@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // Externals
 import Navbar from './components/NavBar';
-import Header from './components/Header';
+// import Header from './components/Header';
 // import Footer from './components/Footer';
 import './index.css';
 
@@ -36,9 +36,8 @@ export default class BaseLayout extends Component {
     const className = classNames[index];
     return(
       <div>
-        <div className={className}>
+        <div className="me">
           <Navbar />
-          <Header />
         </div>
         <div className="content">
           {this.props.children}

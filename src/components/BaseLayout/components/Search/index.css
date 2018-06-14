@@ -1,0 +1,15 @@
+.search_container {
+	display: flex;
+	margin-top: 2.5em;
+	margin-left: 2.5em;
+}
+
+.search_submit {
+	background: transparent;
+	border: none;
+}
+
+.search_submit img {
+	width: 1.2em;
+	height: 1.2em;
+}

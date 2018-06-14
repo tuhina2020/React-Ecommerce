@@ -1,7 +1,10 @@
 .navbar {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   height: 3em;
+  border-style: solid none;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
   justify-content: center;
   align-items: center;
   box-shadow: none;
@@ -11,7 +14,7 @@
   display: flex;
   list-style: none;
   width: 90vw;
-  margin: 0;
+  justify-content: center;
   height: 3em;
   align-items: center;
   font-family: 'Quicksand', sans-serif;
@@ -19,13 +22,39 @@
 
 .navbar li a {
   text-decoration: none;
-  margin: 0 1em;
-  color: white;
+  padding: 0 1em;
+  height: 3em;
+  color: black;
   transition: 0.5s;
 }
 
 .navbar li a:hover {
-  background: transparent;
   color: black;
-  transition: 0.5s;
+  border-color: coral;
+  border-width: 5px;
+  /*transition: 0.5s;*/
 }
+
+#logo {
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 4em;
+    width: 80vw;
+    left: 25%;
+    position: relative;
+}
+
+.top {
+  display: flex;
+}
+/*.navbar li a:hover:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid red 10px;
+    bottom: -22px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    width: 0;
+}*/
