@@ -11,16 +11,14 @@ const AllItems = ({products}) => (
       <div key={product.id} className="item">
         <Icon small id="add-icon">add_shopping_cart</Icon>
         <Link to={`/products/${product.id}`}>
-        <div className="product-img">
-          <img alt={product.name} src={product.img} />
-        </div>
+        <img alt={product.name} src={product.img} className="product-img"/>
         <div className="product-details">
-          <h1 className="product-name">{product.name}</h1>
-          <h4 className="product-description">{product.description.slice(0,22) + "..."}</h4>
+          <div className="product-name">{product.name}</div>
+          <div className="product-description">{product.description.slice(0,22) + "..."}</div>
         </div>
         </Link>
         <div className="price-add">
-          <h5 className="product-price">${product.price}</h5>
+          <div className="product-price">&#8377; {product.price}</div>
         </div>
       </div>
     ))}

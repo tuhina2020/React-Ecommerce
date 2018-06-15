@@ -24,8 +24,8 @@ export default class Main extends React.Component {
 	        <Route path="/accessories" component={Accessories} />
 	        <Route exact path="/designers/:id" component={ShowDesigner} />
 	        <Route path="/designers" component={Designers} />
-	        <Route path="/products" component={Products} />
 	        <Route exact path="/products/:id" component={ShowProduct} />
+	        <Route path="/products" component={Products} />
 	      </Switch>
 	    </BaseLayout>
 	  </BrowserRouter>);

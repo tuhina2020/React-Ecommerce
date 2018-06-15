@@ -36,9 +36,7 @@ export default class BaseLayout extends Component {
     const className = classNames[index];
     return(
       <div>
-        <div className="me">
-          <Navbar />
-        </div>
+        <Navbar />
         <div className="content">
           {this.props.children}
         </div>

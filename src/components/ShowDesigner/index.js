@@ -11,9 +11,9 @@ class DesignerProducts extends Component {
     const productFilter = { designer };
 
     return (
-      <div className="items-wrapper">
+      <div>
         <div className="items-title">
-          <h4>DESIGNER</h4>
+          <div>DESIGNER</div>
         </div>
         <Products productFilter={productFilter}/>
       </div>

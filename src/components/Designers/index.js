@@ -7,7 +7,7 @@ import './index.css';
 class Designers extends Component {
   render() {
     return (
-      <div className="items-wrapper">
+      <div>
       	<div className="trending-boutiques">trending boutiques</div>
         <AllDesigners />
       </div>
