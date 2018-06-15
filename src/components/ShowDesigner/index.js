@@ -12,9 +12,7 @@ class DesignerProducts extends Component {
     const productFilter = { designer: designerId };
     const designer = find(DESIGNERS, (d) => d.id === designerId);
     return (
-      <div>
-        <Products productFilter={productFilter} heading={`DESIGNS BY ${designer.name}`}/>
-      </div>
+      <Products productFilter={productFilter} heading={`DESIGNS BY ${designer.name}`}/>
     );
   }
 }
