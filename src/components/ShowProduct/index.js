@@ -46,10 +46,10 @@ class ShowProduct extends Component {
             <img className="product-image" src={product.img} alt="product" />
           </div>
           <div className="item-name">
-            <div className="designer-container">
+            <Link to={`/designers/${designer.id}`} className="designer-container">
               <span className="dot"></span>
               <span className="designer-name">by {designer.name}</span>
-            </div>
+            </Link>
             <div className="product-name">{product.name}</div>
             <div className="product-bio">
               <p className="product-description">{product.description}</p>

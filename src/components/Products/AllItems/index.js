@@ -11,8 +11,8 @@ const AllItems = ({products}) => (
       <div key={product.id} className="item">
         <Icon small id="add-icon">add_shopping_cart</Icon>
         <Link to={`/products/${product.id}`}>
-        <div className="product-img">
-          <img alt={product.name} src={product.img}/>
+        <div id="product-img">
+          <img alt={product.name} src={product.img} style={{height: "20em"}}/>
         </div>
         <div className="product-details">
           <div className="product-name">{product.name}</div>

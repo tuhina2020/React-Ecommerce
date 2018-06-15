@@ -1,7 +1,6 @@
 // Dependencies
 import React from 'react';
 import { Icon } from 'react-materialize';
-import { NavLink } from 'react-router-dom';
 // Internals
 import './index.css';
 

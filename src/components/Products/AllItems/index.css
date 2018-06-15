@@ -2,11 +2,28 @@ a {
   color: black;
 }
 
-.product-img {
-  width: 10em;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 
-#product-name {
+.items .item {
+  /*height: 30em;
+  width: 20em;*/
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: .5em;
+  padding: 1em;
+  background-color: white;
+  transition: transform 300ms bounce;
+}
+
+.product-name {
   border-top: 1px solid lightgrey;
   padding: 1em 0 0;
   font-size: 1.2em;

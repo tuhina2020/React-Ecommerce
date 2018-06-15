@@ -71,11 +71,12 @@
   font-size: 1em;
   position: relative;
   display: flex;
-  top: -10em;
+  top: -8em;
 }
 
 .item-name .designer-name {
   display: flex;
+  color: black;
   align-items: center;
 }
 

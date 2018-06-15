@@ -1,17 +1,13 @@
-.items-wrapper {
+.items-wrapper .items-title {
+  text-align: center;
 }
 
-.item {
-  /*height: 30em;
-  width: 20em;*/
+.items-wrapper .items-title .items-heading {
   font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: .5em;
-  padding: 1em;
-  background-color: white;
-  transition: transform 300ms bounce;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2em;
+  text-transform: uppercase;
 }
 
 .items {
@@ -22,14 +18,15 @@
   width: 100vw;
 }
 
-.items-title {
-  text-align: center;
-}
-
-.items-heading {
+.items .item {
+  /*height: 30em;
+  width: 20em;*/
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  margin: 2em;
-  text-transform: uppercase;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: .5em;
+  padding: 1em;
+  background-color: white;
+  transition: transform 300ms bounce;
 }
