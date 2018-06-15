@@ -3,52 +3,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 4px solid black;
+}
+
+.item-image {
+  margin: 2em;
 }
 
 .item-wrapper {
   background-color: white;
-  width: 50em;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  width: 65em;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40em;
   font-family: 'Quicksand', sans-serif;
-  margin-left: 20em;
 }
 
 .similar-products {
   height: 40em;
   overflow: scroll;
+  padding-top: 2.3em;
   font-family: 'Quicksand', sans-serif;
-  margin: 0 3em;
+  margin: 0 2em;
   background-color: white;
 }
 
-.similar-product {
-  height: 30em;
-  width: 20em;
-  font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: .5em;
-  padding: 1em;
-  background-color: white;
-  transition: transform 300ms bounce;
-}
-
-#product-name {
-  padding: 1em 0 0;
+.product-details .product-name {
   font-size: 1em;
-  font-family: 'Quicksand', sans-serif;
-  margin: .5em 0;
 }
 
-
-#product-description {
+.product-description {
   font-size: 1em;
   font-family: 'Quicksand', sans-serif;
   color: grey;
@@ -56,7 +40,7 @@
   margin: 0;
 }
 
-#product-price {
+.product-price {
   font-size: 1em;
 }
 
@@ -64,20 +48,50 @@
   height: 35em;
 }
 
-.item-name #product-name {
-  font-size: 40px;
+.item-name .product-name {
+  font-size: 1.2em;
   border: none;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.item-name #product-description {
-  font-size: 30px;
+.item-name .product-description {
+  font-size: 1em;
 }
 
-.item-name #product-price {
-  font-size: 20px;
+.item-name .dot {
+  height: 2.5em;
+  width: 2.5em;
+  margin-right: 0.5em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.item-name .designer-container {
+  font-size: 1em;
+  position: relative;
+  display: flex;
+  top: -10em;
+}
+
+.item-name .designer-name {
+  display: flex;
+  align-items: center;
+}
+
+.item-name .product-price {
+  font-size: 1em;
   color: grey;
 }
 
 .stars {
   display: flex;
+}
+
+.item .product-img-small {
+  height: 20em;
+}
+
+.item .product-img-small img {
+  height: 100%;
 }

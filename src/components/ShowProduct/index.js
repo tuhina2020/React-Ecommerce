@@ -1,70 +1,75 @@
 //Dependencies
 import React, { Component } from 'react';
-import find from 'lodash/find';
+import {find, get, map, isEmpty} from 'lodash';
 import { Link } from 'react-router-dom';
 import { Icon } from 'react-materialize';
 //Internals
 import PRODUCTS from '../Data/products.js';
+import DESIGNERS from '../Data/designers.js';
+
 import './index.css';
 
 class ShowProduct extends Component {
   render () {
     const product = find(PRODUCTS, ['id', parseInt(this.props.match.params.id)]);
-    const currentProduct = product;
+    const designer = find(DESIGNERS, ['id', get(product, "designer")]);
+    const similar = map(PRODUCTS, (p) => {
+      if (
+        (p.gender === product.gender || p.designer === product.designer || p.category === product.category)
+        && p.type === product.type
+        && p.name !== product.name) {
+        return(
+          <Link to={`/products/${p.id}`}>
+            <div key={p.id} className="item">
+              <Link to={`/products/${p.id}`}>
+              <div className="product-img-small">
+                <img alt={p.name} src={p.img} />
+              </div>
+              <div className="product-details">
+                <div className="product-name">{p.name}</div>
+                <div className="product-description">{p.description}</div>
+              </div>
+              </Link>
+              <div className="price-add">
+                <div className="product-price">${p.price}</div>
+                <Icon small className="add-icon">add_shopping_cart</Icon>
+              </div>
+            </div>
+          </Link>
+        )
+      }
+    });
     return (
       <div className="show-product">
         <div className="item-wrapper">
           <div className="item-image">
-            <img className="product-image" src={currentProduct.img} alt="product" />
+            <img className="product-image" src={product.img} alt="product" />
           </div>
           <div className="item-name">
-            <div className="product-info">
-              <h3 id="product-name">{currentProduct.name}</h3>
+            <div className="designer-container">
+              <span className="dot"></span>
+              <span className="designer-name">by {designer.name}</span>
             </div>
+            <div className="product-name">{product.name}</div>
             <div className="product-bio">
-              <p id="product-description">{currentProduct.description}</p>
-              <p id="product-price">${currentProduct.price}</p>
-              <Icon small id="add-icon">add_shopping_cart</Icon>
+              <p className="product-description">{product.description}</p>
+              <p className="product-price">&#8377; {product.price}</p>
+              <Icon small className="add-icon">add_shopping_cart</Icon>
             </div>
             <div className="product-review">
               <div className="stars">
-                <Icon small id="add-icon">star</Icon>
-                <Icon small id="add-icon">star</Icon>
-                <Icon small id="add-icon">star</Icon>
-                <Icon small id="add-icon">star</Icon>
-                <Icon small id="add-icon">star_half</Icon>
+                <Icon small className="add-icon">star</Icon>
+                <Icon small className="add-icon">star</Icon>
+                <Icon small className="add-icon">star</Icon>
+                <Icon small className="add-icon">star</Icon>
+                <Icon small className="add-icon">star_half</Icon>
               </div>
             </div>
           </div>
-        </div>
-        <div className="similar-products">
-          <h5>You might also like</h5>
-          {PRODUCTS.map((product) => {
-            if (
-              product.gender === currentProduct.gender
-              && product.type === currentProduct.type
-              && product.name !== currentProduct.name) {
-              return(
-                <Link to={`/products/${product.id}`}>
-                  <div key={product.id} className="item">
-                    <Link to={`/products/${product.id}`}>
-                    <div className="product-img">
-                      <img alt={product.name} src={product.img} />
-                    </div>
-                    <div className="product-details">
-                      <h1 id="product-name">{product.name}</h1>
-                      <h4 id="product-description">{product.description}</h4>
-                    </div>
-                    </Link>
-                    <div className="price-add">
-                      <h5 id="product-price">${product.price}</h5>
-                      <Icon small id="add-icon">add_shopping_cart</Icon>
-                    </div>
-                  </div>
-                </Link>
-              )
-            }
-          })}
+          <div className="similar-products">
+              {!isEmpty(similar) ? <div style={{marginLeft: "2em"}}>YOU MAY ALSO LIKE</div> : null}
+              {similar}
+          </div>
         </div>
       </div>
     );
