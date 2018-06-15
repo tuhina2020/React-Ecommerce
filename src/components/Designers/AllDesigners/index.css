@@ -7,7 +7,7 @@
   background-color: #ffffff;
   border-style: solid;
   border-color: black;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .designers {
@@ -20,7 +20,7 @@
 .designer-details .designer-text {
     text-align: center;
     color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     padding-bottom: 0.5em;
 }
 
@@ -28,6 +28,6 @@
   margin: 1em;
   border-style: solid;
   border-color: black;
-  border-width: 2px;
+  border-width: 1px;
   margin-bottom: 0.25em;
 }

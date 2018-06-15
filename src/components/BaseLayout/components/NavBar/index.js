@@ -33,7 +33,7 @@ export default class Navbar extends React.Component {
             <div id="search">
               <Search />
             </div>
-            <div id="logo">Modalle</div>
+            <NavLink id="logo" to="/">Modalle</NavLink>
           </div>
           <nav className="navbar">
             <div className="nav-links">
@@ -45,12 +45,12 @@ export default class Navbar extends React.Component {
                 </li>
                 <li>
                   <div className="nav__menu-container">
-                    <NavLink activeClassName="selected" className="nav-link" to="/women">VIEW BY DESIGNER</NavLink>
+                    <NavLink activeClassName="selected" className="nav-link" to="/designers">VIEW BY DESIGNER</NavLink>
                   </div>
                 </li>
                 <li>
                   <div className="nav__menu-container">
-                    <NavLink activeClassName="selected" className="nav-link" to="/men">VIEW PRODUCTS</NavLink>
+                    <NavLink activeClassName="selected" className="nav-link" to="/products">VIEW PRODUCTS</NavLink>
                   </div>
                 </li>
               </ul>

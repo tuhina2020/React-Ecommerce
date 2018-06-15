@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import AllDesigners from './AllDesigners';
 import './index.css';
 
-class Products extends Component {
+class Designers extends Component {
   render() {
     return (
       <div className="items-wrapper">
@@ -15,4 +15,4 @@ class Products extends Component {
   }
 }
 
-export default Products;
+export default Designers;

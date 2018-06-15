@@ -15,9 +15,9 @@ const AllDesigners = () => (
           <div className="designer-details">
         	  <img className="designer-img" alt="image" src={designer.image}/>
             <div className="designer-text">
-  	          <div id="designer-name">{designer.name}</div>
-  	          <div id="designer-description">{designer.description}</div>
-              <div id="designer-cta">{designer.cta}</div>
+  	          <div className="designer-name">{designer.name}</div>
+  	          <div className="designer-description">{designer.description}</div>
+              <div className="designer-cta">{designer.cta}</div>
             </div>
 	        </div>
         </Link>

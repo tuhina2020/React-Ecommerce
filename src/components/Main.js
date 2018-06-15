@@ -4,14 +4,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './App';
 import Cart from './Cart';
 import BaseLayout from './BaseLayout';
-import Women from './Women';
-import Men from './Men';
-import Clothes from './Clothes';
 import Accessories from './Accessories';
 import ShowProduct from './ShowProduct';
 import ShowDesigner from './ShowDesigner';
 import Designers from './Designers';
-import Items from './Items';
+import Products from './Products';
 
 export default class Main extends React.Component {
 	constructor(props) {
@@ -20,7 +17,17 @@ export default class Main extends React.Component {
 
 	render () {
 		return (<BrowserRouter>
-	    <BaseLayout/>
+	    <BaseLayout>
+	      <Switch>
+	        <Route exact path="/" component={App} />
+	        <Route path="/cart" component={Cart} />
+	        <Route path="/accessories" component={Accessories} />
+	        <Route exact path="/designers/:id" component={ShowDesigner} />
+	        <Route path="/designers" component={Designers} />
+	        <Route path="/products" component={Products} />
+	        <Route exact path="/products/:id" component={ShowProduct} />
+	      </Switch>
+	    </BaseLayout>
 	  </BrowserRouter>);
 	}
 };

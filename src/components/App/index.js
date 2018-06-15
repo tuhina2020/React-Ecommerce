@@ -1,13 +1,14 @@
 // Dependencies
 import React from 'react';
 //Internals
-import Products from '../Items';
+import Products from '../Products';
 import Designers from '../Designers';
 // import './index.css';
 
 const Collection = () => (
-  <div className="content">
+  <div className="container">
     <Designers />
+    <Products />
   </div>
 );
 

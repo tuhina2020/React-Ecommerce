@@ -1,13 +1,8 @@
 // Dependencies
 import React from 'react';
 //Internals
-import Products from '../Items';
-import './index.css';
+import Products from '../Products';
 
-const Collection = () => (
-  <div className="content">
-    <Products />
-  </div>
-);
+const Collection = () => <Products />
 
 export default Collection;

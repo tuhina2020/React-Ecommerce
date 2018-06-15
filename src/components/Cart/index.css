@@ -6,7 +6,7 @@
 #cart-title {
   text-align: center;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .cart-item {
@@ -31,7 +31,7 @@
 }
 
 #total-price {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .total-price {

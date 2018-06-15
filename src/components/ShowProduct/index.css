@@ -22,7 +22,7 @@
 .similar-products {
   height: 40em;
   overflow: scroll;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0 3em;
   background-color: white;
 }
@@ -42,15 +42,15 @@
 
 #product-name {
   padding: 1em 0 0;
-  font-size: 1.5em;
-  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
   margin: .5em 0;
 }
 
 
 #product-description {
   font-size: 1em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: grey;
   font-weight: lighter;
   margin: 0;

@@ -57,7 +57,7 @@ const products = [
     type: "earring",
     img: "https://assets.ajio.com/medias/sys_master/root/h28/hae/11134870224926/-473Wx593H-460164022-silver-MODEL.jpg",
     inCart: false,
-    category: "jewelery"
+    category: "accessories"
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const products = [
     type: "necklace",
     img: "https://assets.ajio.com/medias/sys_master/root/hbe/h98/11408013525022/-473Wx593H-460202517-silver-MODEL.jpg",
     inCart: false,
-    category: "jewelery"
+    category: "accessories"
   },
   {
     id: 7,
@@ -141,7 +141,7 @@ const products = [
     type: "dupatta",
     img: "https://assets.ajio.com/medias/sys_master/root/hfb/h5c/11372843106334/-473Wx593H-460169326-green-MODEL.jpg",
     inCart: false,
-    category: "accessories"
+    category: "ethnic"
   },
   {
     id: 13,
@@ -201,7 +201,7 @@ const products = [
     type: "kurta",
     img: "https://assets.ajio.com/medias/sys_master/root/h49/hc9/10666888790046/-473Wx593H-460089663-yellow-MODEL.jpg",
     inCart: false,
-    category: "accessories"
+    category: "ethnic"
   },
   {
     id: 18,
@@ -225,7 +225,7 @@ const products = [
     type: "tie",
     img: "https://assets.ajio.com/medias/sys_master/root/h24/hb0/10342167412766/-473Wx593H-460062773-rust-MODEL.jpg",
     inCart: false,
-    category: "accessories"
+    category: "ethnic"
   },
   {
     id: 20,
@@ -237,7 +237,7 @@ const products = [
     type: "tie",
     img: "https://assets.ajio.com/medias/sys_master/root/hd2/h82/10154526572574/-473Wx593H-460056842-blue-MODEL.jpg",
     inCart: false,
-    category: "accessories"
+    category: "ethnic"
   },
   {
     id: 21,
@@ -286,7 +286,7 @@ const products = [
     price: 900,
     designer: 1,
     gender: 'women',
-    img: 'https://www.ajio.com/ajio-embroidered-denim-kurta-with-bell-sleeves/p/460091626_ltblue',
+    img: 'https://assets.ajio.com/medias/sys_master/root/h7c/h71/10967908483102/-473Wx593H-460091626-ltblue-MODEL.jpg',
     category: 'kurta'
   },
   {
