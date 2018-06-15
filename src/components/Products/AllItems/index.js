@@ -11,7 +11,9 @@ const AllItems = ({products}) => (
       <div key={product.id} className="item">
         <Icon small id="add-icon">add_shopping_cart</Icon>
         <Link to={`/products/${product.id}`}>
-        <img alt={product.name} src={product.img} className="product-img"/>
+        <div className="product-img">
+          <img alt={product.name} src={product.img}/>
+        </div>
         <div className="product-details">
           <div className="product-name">{product.name}</div>
           <div className="product-description">{product.description.slice(0,22) + "..."}</div>

@@ -12,7 +12,7 @@ class Products extends Component {
   }
 
   render() {
-    let { productFilter } = this.props;
+    let { productFilter, heading } = this.props;
     let products = isEmpty(productFilter) ? PRODUCTS : filter(PRODUCTS, (product) => {
       let value = true;
       forOwn(productFilter, (v, k) => {
@@ -23,7 +23,7 @@ class Products extends Component {
     return (
       <div className="items-wrapper">
         <div className="items-title">
-          <div className="items-heading">All Items</div>
+          <div className="items-heading">{heading || "ALL PRODUCTS"}</div>
         </div>
         <AllItems products={products}/>
       </div>

@@ -4,18 +4,16 @@ import React, { Component } from 'react';
 import Products from '../Products';
 // import './index.css';
 import DESIGNERS from '../Data/designers.js';
+import { find } from 'lodash';
 
 class DesignerProducts extends Component {
   render() {
-    const designer = parseInt(this.props.match.params.id);
-    const productFilter = { designer };
-
+    const designerId = parseInt(this.props.match.params.id);
+    const productFilter = { designer: designerId };
+    const designer = find(DESIGNERS, (d) => d.id === designerId);
     return (
       <div>
-        <div className="items-title">
-          <div>DESIGNER</div>
-        </div>
-        <Products productFilter={productFilter}/>
+        <Products productFilter={productFilter} heading={`DESIGNS BY ${designer.name}`}/>
       </div>
     );
   }

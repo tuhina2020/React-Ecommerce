@@ -8,7 +8,7 @@ import { map } from 'lodash';
 import Slider from 'react-slick';
 
 
-class Collection extends React.Component {
+class App extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -67,4 +67,4 @@ class Collection extends React.Component {
 	}
 }
 
-export default Collection;
+export default App;

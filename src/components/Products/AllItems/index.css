@@ -1,34 +1,9 @@
-.item {
-  /*height: 30em;
-  width: 20em;*/
-  font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: .5em;
-  padding: 1em;
-  background-color: white;
-  transition: transform 300ms bounce;
-}
-
-.items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.items-title {
-  text-align: center;
-}
-
 a {
   color: black;
 }
 
 .product-img {
-  height: 20em;
+  width: 20em;
 }
 
 #product-name {
@@ -48,7 +23,7 @@ a {
   margin: 0;
 }
 
-#product-price {
+.product-price {
   font-size: 1em;
 }
 
@@ -66,12 +41,4 @@ i:hover {
   color: grey;
   transition: 0.5s;
   cursor: pointer;
-}
-
-.items-title {
-  margin: 3em 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: lighter;
-  color: rgba(0, 0, 0, 0.8);
-  text-transform: uppercase;
 }

@@ -12,7 +12,7 @@ class Accessories extends Component {
           <h4>Accessories</h4>
         </div>
         <div className="items">
-          <Products products={products}/>
+          <Products productFilter={productFilter} heading="ACCESSORIES"/>
         </div>
       </div>
     );
