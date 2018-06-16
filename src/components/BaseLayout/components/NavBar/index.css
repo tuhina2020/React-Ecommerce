@@ -46,8 +46,3 @@
 .top {
   display: flex;
 }
-
-#search {
-  position: relative;
-  left: 60%;
-}
