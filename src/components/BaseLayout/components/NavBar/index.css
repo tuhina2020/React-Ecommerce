@@ -36,26 +36,18 @@
 }
 
 #logo {
-    font-family: 'Dancing Script', Georgia, Times, serif;
-    font-size: 4em;
-    width: 80vw;
-    color: black;
-    left: 25%;
-    position: relative;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 3em;
+  color: black;
+  position: relative;
+  left: 45%;
 }
 
 .top {
   display: flex;
 }
-/*.navbar li a:hover:after {
-    border-left: solid transparent 10px;
-    border-right: solid transparent 10px;
-    border-top: solid red 10px;
-    bottom: -22px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -10px;
-    position: absolute;
-    width: 0;
-}*/
+
+#search {
+  position: relative;
+  left: 60%;
+}

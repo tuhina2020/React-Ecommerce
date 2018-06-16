@@ -54,7 +54,7 @@ const products = [
     price: 499,
     designer: 1,
     gender: "women",
-    type: "earring",
+    type: "jewellery",
     img: "https://assets.ajio.com/medias/sys_master/root/h28/hae/11134870224926/-473Wx593H-460164022-silver-MODEL.jpg",
     inCart: false,
     category: "accessories"
@@ -66,7 +66,7 @@ const products = [
     price: 499,
     designer: 2,
     gender: "women",
-    type: "necklace",
+    type: "jewellery",
     img: "https://assets.ajio.com/medias/sys_master/root/hbe/h98/11408013525022/-473Wx593H-460202517-silver-MODEL.jpg",
     inCart: false,
     category: "accessories"
@@ -210,7 +210,7 @@ const products = [
     price: 2500,
     designer: 2,
     gender: "women",
-    type: "bag",
+    type: "jewellery",
     img: "https://assets.ajio.com/medias/sys_master/root/h59/hb3/10795852300318/-473Wx593H-460137487-multi-MODEL.jpg",
     inCart: false,
     category: "accessories"

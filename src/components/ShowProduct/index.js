@@ -1,6 +1,6 @@
 //Dependencies
 import React, { Component } from 'react';
-import {find, get, map, isEmpty} from 'lodash';
+import {find, get, map, isEmpty, compact} from 'lodash';
 import { Link } from 'react-router-dom';
 import { Icon } from 'react-materialize';
 //Internals
@@ -13,7 +13,7 @@ class ShowProduct extends Component {
   render () {
     const product = find(PRODUCTS, ['id', parseInt(this.props.match.params.id)]);
     const designer = find(DESIGNERS, ['id', get(product, "designer")]);
-    const similar = map(PRODUCTS, (p) => {
+    let similar = map(PRODUCTS, (p) => {
       if (
         (p.gender === product.gender || p.designer === product.designer || p.category === product.category)
         && p.type === product.type
@@ -30,15 +30,15 @@ class ShowProduct extends Component {
                 <div className="product-description">{p.description}</div>
               </div>
               </Link>
-              <div className="price-add">
-                <div className="product-price">${p.price}</div>
-                <Icon small className="add-icon">add_shopping_cart</Icon>
-              </div>
             </div>
           </Link>
         )
       }
+      else
+        return null;
     });
+    similar = compact(similar);
+    console.log(similar)
     return (
       <div className="show-product">
         <div className="item-wrapper">
@@ -67,7 +67,7 @@ class ShowProduct extends Component {
             </div>
           </div>
           <div className="similar-products">
-              {!isEmpty(similar) ? <div style={{marginLeft: "2em"}}>YOU MAY ALSO LIKE</div> : null}
+              {!isEmpty(similar) ? <div style={{marginLeft: "1em"}}>YOU MAY ALSO LIKE </div> : null}
               {similar}
           </div>
         </div>

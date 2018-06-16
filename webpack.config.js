@@ -24,16 +24,6 @@ module.exports = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          // {
-          //   loader: "css-loader",
-          //   options: {
-          //     plugins: () => [require('autoprefixer')],
-          //     modules: true,
-          //     importLoaders: 1,
-          //     localIdentName: "[path][name]__[local]--[hash:base64:5]",
-          //     sourceMap: true
-          //   }
-          // },
           "css-loader"
         ]
       }
