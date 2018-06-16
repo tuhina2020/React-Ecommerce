@@ -11,7 +11,6 @@
 
 .item-wrapper {
   background-color: white;
-  width: 65em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,9 +21,8 @@
 .similar-products {
   height: 40em;
   overflow: scroll;
-  padding-top: 2.3em;
   font-family: 'Quicksand', sans-serif;
-  margin: 0 2em;
+  padding: 2.3em 0 0 25em;
   background-color: white;
 }
 
@@ -59,10 +57,11 @@
 }
 
 .item-name .dot {
-  height: 2.5em;
-  width: 2.5em;
+  height: 4em;
+  width: 4em;
+  border: 1px solid black;
   margin-right: 0.5em;
-  background-color: #bbb;
+  background-color: #0e6cee;
   border-radius: 50%;
   display: inline-block;
 }
@@ -90,7 +89,7 @@
 }
 
 .item .product-img-small {
-  height: 20em;
+  height: 15em;
 }
 
 .item .product-img-small img {

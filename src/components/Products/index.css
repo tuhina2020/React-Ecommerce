@@ -30,3 +30,14 @@
   background-color: white;
   transition: transform 300ms bounce;
 }
+
+.items-title .items-image {
+  height: 5em;
+  width: 5em;
+  margin-top: 1em;
+  margin-right: 0.5em;
+  background-color: #0e6cee;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
