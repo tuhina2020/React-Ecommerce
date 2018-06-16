@@ -20,11 +20,21 @@
 
 .similar-products {
   height: 40em;
-  overflow: scroll;
+  overflow: auto;
   font-family: 'Quicksand', sans-serif;
   padding: 2.3em 0 0 25em;
   background-color: white;
+  scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+}
+
 
 .product-details .product-name {
   font-size: 1em;
