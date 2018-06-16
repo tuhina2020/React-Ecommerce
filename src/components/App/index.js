@@ -36,7 +36,11 @@ class App extends React.Component {
 		};
 
 		let processedData = map(IMAGES, (image, index) => {
-			return (<div className="banner_img" key={index}><img src={image} alt="banner" /></div>);
+			return (
+				<div className="banner_img" key={index}>
+					<img src={image} alt="banner" class="center" />
+				</div>
+			);
 		});
 
 		return(

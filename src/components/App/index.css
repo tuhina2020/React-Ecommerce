@@ -13,5 +13,11 @@
 }
 
 .banner_img {
-  height: 40em;
+	height: 40em;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
