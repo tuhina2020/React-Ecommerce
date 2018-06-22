@@ -61,16 +61,10 @@ class ShowProduct extends Component {
             <div className="product-bio">
               <p className="product-description">{product.description}</p>
               <p className="product-price">&#8377; {product.price}</p>
-              <Icon small className="add-icon">add_shopping_cart</Icon>
             </div>
             <div className="product-review">
-              <div className="stars">
-                <Icon small className="add-icon">star</Icon>
-                <Icon small className="add-icon">star</Icon>
-                <Icon small className="add-icon">star</Icon>
-                <Icon small className="add-icon">star</Icon>
-                <Icon small className="add-icon">star_half</Icon>
-              </div>
+                <img src="/images/like/full.svg" className="likes" style={{width: "2em", height: "2em"}}/>
+                <span style={{fontSize: "3em", marginLeft: "1em"}}>{product.likes} </span>
             </div>
           </div>
           <div className="similar-products">

@@ -26,7 +26,7 @@ class App extends React.Component {
 	}
 
 	render() {
-		let IMAGES = ['/images/front-banner/img1.jpg', '/images/front-banner/img2.jpg', '/images/front-banner/img3.jpg'];
+		let IMAGES = ['/images/front-banner/img4.jpg', '/images/front-banner/img2.jpg', '/images/front-banner/img3.jpg'];
 		let settings = { 
 			dots: true,
 			className: 'sample',

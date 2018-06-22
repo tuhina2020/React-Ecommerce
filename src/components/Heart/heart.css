@@ -1,5 +1,4 @@
 .full {
-	background: url(/images/like/full.svg);,
 	background-repeat: no-repeat;
   	height: 1.5em;
   	width: 1.5em;
@@ -9,7 +8,6 @@
 }
 
 .empty {
-	background: url(/images/like/empty.svg);,
 	background-repeat: no-repeat;
   	height: 1.5em;
   	width: 1.5em;
