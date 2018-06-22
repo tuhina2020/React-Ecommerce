@@ -42,7 +42,7 @@ class ShowProduct extends Component {
     const similar = [];
     const heartStyle = {
       top: "-15em",
-      left: "7em",
+      left: "5em",
       width: "3em",
       height: "3em"
     }

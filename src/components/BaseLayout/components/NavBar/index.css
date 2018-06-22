@@ -23,9 +23,12 @@
 .navbar li a {
   text-decoration: none;
   padding: 0 1em;
-  height: 3em;
   color: black;
   transition: 0.5s;
+}
+
+nav ul a {
+  font-size: 1.5em;
 }
 
 .navbar li a:hover {

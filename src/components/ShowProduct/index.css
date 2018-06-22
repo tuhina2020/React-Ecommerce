@@ -13,6 +13,10 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+.item-image {
+  margin-right: 2em;
+}
+
 .similar-products {
   height: 40em;
   overflow: auto;
@@ -75,12 +79,13 @@
   font-size: 1em;
   position: relative;
   display: flex;
-  top: -8em;
+  top: -10em;
 }
 
 .item-name .product-designer-name {
   display: flex;
   color: black;
+  font-size: 1.5em;
   align-items: center;
 }
 
