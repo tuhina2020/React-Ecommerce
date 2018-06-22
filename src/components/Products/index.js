@@ -24,7 +24,6 @@ class Products extends Component {
     return (
       <div className="items-wrapper">
         <div className="items-title">
-          {image ? <div className="items-image"/> : null}
           <div className="items-heading">{heading || "ALL PRODUCTS"}</div>
         </div>
         <AllItems products={products}/>

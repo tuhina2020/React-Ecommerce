@@ -4,10 +4,6 @@
   margin-bottom: 2em;
   position: relative;
   bottom: 1em;
-  background-color: #ffffff;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
 }
 
 .designers {
@@ -26,9 +22,10 @@
 
 .designer-img {
   margin: 1em;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
   height: 25em;
   margin-bottom: 0.25em;
+}
+
+.designer-name {
+  font-size: 1.5em;
 }

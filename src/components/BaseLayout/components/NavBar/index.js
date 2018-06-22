@@ -32,12 +32,12 @@ export default class Navbar extends React.Component {
                 </li>
                 <li>
                   <div className="nav__menu-container">
-                    <NavLink activeClassName="selected" className="nav-link" to="/designers">VIEW BY DESIGNER</NavLink>
+                    <NavLink activeClassName="selected" className="nav-link" to="/designers">DESIGNERS</NavLink>
                   </div>
                 </li>
                 <li>
                   <div className="nav__menu-container">
-                    <NavLink activeClassName="selected" className="nav-link" to="/products">VIEW PRODUCTS</NavLink>
+                    <NavLink activeClassName="selected" className="nav-link" to="/products">PRODUCTS</NavLink>
                   </div>
                 </li>
               </ul>

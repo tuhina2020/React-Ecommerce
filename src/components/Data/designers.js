@@ -5,7 +5,7 @@ const designers = [
 		image: "/images/designer/designer-1.jpg",
 		description: "",
 		location: "Commercial Street",
-		cta: "SHOP NOW"
+		cta: ""
 	},
 	{
 		id: 2,
@@ -13,7 +13,7 @@ const designers = [
 		description: "",
 		image: "/images/designer/designer-5.jpg",
 		location: "Koramangala",
-		cta: "SHOP NOW"
+		cta: ""
 	},
 	{
 		id: 3,
@@ -21,7 +21,7 @@ const designers = [
 		description: "",
 		image: "/images/designer/designer-3.jpg",
 		location: "Shivaji Nagar",
-		cta: "SHOP NOW"
+		cta: ""
 	},
 	// {
 	// 	id: 4,
@@ -45,7 +45,7 @@ const designers = [
 		description: "",
 		image: "/images/designer/designer-4.jpg",
 		location: "Indiranagar",
-		cta: "SHOP NOW"
+		cta: ""
 	}
 ];
 

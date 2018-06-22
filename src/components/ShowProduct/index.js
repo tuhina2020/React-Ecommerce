@@ -47,7 +47,6 @@ class ShowProduct extends Component {
           </div>
           <div className="item-name">
             <Link to={`/designers/${designer.id}`} className="designer-container">
-              <span className="dot"></span>
               <span className="designer-name">by {designer.name}</span>
             </Link>
             <div className="product-name">{product.name}</div>
