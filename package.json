@@ -31,8 +31,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "start:dev": "webpack-dev-server --config webpack.dev.js",
     "build:prod": "webpack",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.4"
   }
 }

@@ -9,7 +9,6 @@ const AllItems = ({products}) => (
   <div className="items">
     {map(products, (product)=> (
       <div key={product.id} className="item">
-        <Icon small id="add-icon">add_shopping_cart</Icon>
         <Link to={`/products/${product.id}`}>
         <div id="product-img">
           <img alt={product.name} src={product.img} style={{height: "20em"}}/>

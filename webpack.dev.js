@@ -45,8 +45,10 @@ module.exports = {
     host: 'localhost'
   },
   plugins: [
-    new MiniCssExtractPlugin({
+  	new MiniCssExtractPlugin({
       filename: "styles.css"
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin()
   ]
 };
