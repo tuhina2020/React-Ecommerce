@@ -4,6 +4,7 @@ const designers = [
 		name: "HUEMN",
 		image: "/images/designer/designer-1.jpg",
 		description: "",
+		followers: 4000,
 		location: "Commercial Street",
 		cta: ""
 	},
@@ -11,6 +12,7 @@ const designers = [
 		id: 2,
 		name: "TWINKLE HANSPAL",
 		description: "",
+		followers: 2300,
 		image: "/images/designer/designer-5.jpg",
 		location: "Koramangala",
 		cta: ""
@@ -19,6 +21,7 @@ const designers = [
 		id: 3,
 		name: "QBIK",
 		description: "",
+		followers: 4500,
 		image: "/images/designer/designer-3.jpg",
 		location: "Shivaji Nagar",
 		cta: ""
@@ -43,6 +46,7 @@ const designers = [
 		id: 4,
 		name: "HOMBRO",
 		description: "",
+		followers: 900,
 		image: "/images/designer/designer-4.jpg",
 		location: "Indiranagar",
 		cta: ""

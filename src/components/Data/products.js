@@ -7,6 +7,7 @@ const products = [
     gender: "women",
     type: "shirt",
     designer: 1,
+    likes: 12,
     img: "https://assets.ajio.com/medias/sys_master/root/h03/h76/11344430694430/-473Wx593H-460159430-green-MODEL.jpg",
     inCart: false,
     category: "clothes"
@@ -18,6 +19,7 @@ const products = [
     price: 499,
     gender: "women",
     designer: 2,
+    likes: 24,
     type: "saree",
     img: "https://assets.ajio.com/medias/sys_master/root/hd9/h66/10597656363038/-473Wx593H-460124434-green-MODEL.jpg",
     inCart: false,
@@ -30,6 +32,7 @@ const products = [
     price: 1499,
     gender: "women",
     type: "kurta",
+    likes: 65,
     designer: 3,
     img: "https://assets.ajio.com/medias/sys_master/root/h80/hec/11284571357214/-473Wx593H-460136594-maroon-MODEL.jpg",
     inCart: false,
@@ -43,6 +46,7 @@ const products = [
     designer: 4,
     gender: "women",
     type: "kurti",
+    likes: 54,
     img: "https://assets.ajio.com/medias/sys_master/root/h1b/h38/10764474318878/-473Wx593H-460074235-mint-MODEL.jpg",
     inCart: false,
     category: "clothes"
@@ -55,6 +59,7 @@ const products = [
     designer: 1,
     gender: "women",
     type: "jewellery",
+    likes: 5,
     img: "https://assets.ajio.com/medias/sys_master/root/h28/hae/11134870224926/-473Wx593H-460164022-silver-MODEL.jpg",
     inCart: false,
     category: "accessories"
@@ -67,6 +72,7 @@ const products = [
     designer: 2,
     gender: "women",
     type: "jewellery",
+    likes: 34,
     img: "https://assets.ajio.com/medias/sys_master/root/hbe/h98/11408013525022/-473Wx593H-460202517-silver-MODEL.jpg",
     inCart: false,
     category: "accessories"
@@ -79,6 +85,7 @@ const products = [
     designer: 3,
     gender: "women",
     type: "dupatta",
+    likes: 67,
     img: "https://assets.ajio.com/medias/sys_master/root/h71/he8/11396671930398/-473Wx593H-460189289-multi-MODEL.jpg",
     inCart: false,
     category: "clothes"
@@ -91,6 +98,7 @@ const products = [
     designer: 4,
     gender: "women",
     type: "dupatta",
+    likes: 56,
     img: "https://assets.ajio.com/medias/sys_master/root/h40/hd0/11372663275550/-473Wx593H-460169324-red-MODEL.jpg",
     inCart: false,
     category: "clothes"
@@ -102,6 +110,7 @@ const products = [
     price: 2100,
     designer: 1,
     gender: "women",
+    likes: 23,
     type: "shirt",
     img: "https://assets.ajio.com/medias/sys_master/root/hac/h4d/11386139869214/-473Wx593H-460189300-indigo-MODEL.jpg",
     inCart: false,
@@ -115,6 +124,7 @@ const products = [
     designer: 2,
     gender: "women",
     type: "shirt",
+    likes: 45,
     img: "https://assets.ajio.com/medias/sys_master/root/hea/ha7/10400926072862/-473Wx593H-460081996-coral-MODEL.jpg",
     inCart: false,
     category: "clothes"
@@ -127,6 +137,7 @@ const products = [
     designer: 3,
     gender: "women",
     type: "watch",
+    likes: 90,
     img: "https://assets.ajio.com/medias/sys_master/root/h96/hc8/10548764803102/-473Wx593H-460094515-ivory-MODEL.jpg",
     inCart: false,
     category: "kurta"
@@ -139,6 +150,7 @@ const products = [
     designer: 4,
     gender: "women",
     type: "dupatta",
+    likes: 22,
     img: "https://assets.ajio.com/medias/sys_master/root/hfb/h5c/11372843106334/-473Wx593H-460169326-green-MODEL.jpg",
     inCart: false,
     category: "ethnic"
@@ -151,6 +163,7 @@ const products = [
     designer: 1,
     gender: "women",
     type: "pajama",
+    likes: 83,
     img: "https://assets.ajio.com/medias/sys_master/root/h01/hf1/11397002559518/-473Wx593H-460170341-fuschia-MODEL4.jpg",
     inCart: false,
     category: "clothes"
@@ -163,6 +176,7 @@ const products = [
     designer: 2,
     gender: "women",
     type: "trousers",
+    likes: 29,
     img: "https://assets.ajio.com/medias/sys_master/root/hf1/h2d/11251608256542/-473Wx593H-460159412-lightgreen-MODEL.jpg",
     inCart: false,
     category: "clothes"
@@ -174,6 +188,7 @@ const products = [
     price: 2200,
     designer: 3,
     gender: "women",
+    likes:39,
     type: "fabric",
     img: "https://assets.ajio.com/medias/sys_master/root/h99/h2a/11372857262110/-473Wx593H-460169339-blue-MODEL.jpg",
     inCart: false,
@@ -185,6 +200,7 @@ const products = [
     description: "Hand Tie-Dyed Mothda Cotton Kurta Fabric",
     price: 800,
     designer: 4,
+    likes: 37,
     gender: "women",
     type: "fabric",
     img: "https://assets.ajio.com/medias/sys_master/root/h35/h28/11287431282718/-473Wx593H-460169354-blue-MODEL2.jpg",
@@ -197,6 +213,7 @@ const products = [
     description: "Printed Straight Kurta Women",
     price: 1400,
     designer: 1,
+    likes: 27,
     gender: "women",
     type: "kurta",
     img: "https://assets.ajio.com/medias/sys_master/root/h49/hc9/10666888790046/-473Wx593H-460089663-yellow-MODEL.jpg",
@@ -209,6 +226,7 @@ const products = [
     description: "Ajrak Handblock Print Mashru Bag",
     price: 2500,
     designer: 2,
+    likes: 30,
     gender: "women",
     type: "jewellery",
     img: "https://assets.ajio.com/medias/sys_master/root/h59/hb3/10795852300318/-473Wx593H-460137487-multi-MODEL.jpg",
@@ -221,6 +239,7 @@ const products = [
     description: "Sleeveless Straight Kurta with Slit Hem",
     price: 1200,
     designer: 3,
+    likes: 30,
     gender: "women",
     type: "tie",
     img: "https://assets.ajio.com/medias/sys_master/root/h24/hb0/10342167412766/-473Wx593H-460062773-rust-MODEL.jpg",
@@ -233,6 +252,7 @@ const products = [
     description: "Printed Sleeveless Kurta with Front Open",
     price: 600,
     designer: 4,
+    likes: 38,
     gender: "men",
     type: "tie",
     img: "https://assets.ajio.com/medias/sys_master/root/hd2/h82/10154526572574/-473Wx593H-460056842-blue-MODEL.jpg",
@@ -245,6 +265,7 @@ const products = [
     description: 'Printed Chanderi Kurti with Tasselled Tie-Up',
     price: 900,
     designer: 1,
+    likes: 67,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/hbf/h48/11225513984030/-473Wx593H-460159704-grey-MODEL.jpg',
     category: 'kurta'
@@ -255,6 +276,7 @@ const products = [
     description: 'Kalidar Print Flared Kurta with Tassels',
     price: 900,
     designer: 2,
+    likes: 35,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/h48/h6f/11265421213726/-473Wx593H-460166024-grey-MODEL.jpg',
     category: 'kurta'
@@ -265,6 +287,7 @@ const products = [
     description: 'Embroidery Striped kurta',
     price: 1200,
     designer: 3,
+    likes: 34,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/hdc/ha6/11159305682974/-473Wx593H-460150584-mauve-MODEL.jpg',
     category: 'kurta'
@@ -275,6 +298,7 @@ const products = [
     description: 'Printed Straight Kurta with Embroidered Collar',
     price: 1500,
     designer: 4,
+    likes: 49,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/h6a/he0/11309579829278/-473Wx593H-460158630-coral-MODEL.jpg',
     category: 'kurta'
@@ -284,6 +308,7 @@ const products = [
     name: 'Embroidered denim kurta',
     description: 'Embroidered Denim Kurta with Bell Sleeves',
     price: 900,
+    likes: 29,
     designer: 1,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/h7c/h71/10967908483102/-473Wx593H-460091626-ltblue-MODEL.jpg',
@@ -295,6 +320,7 @@ const products = [
     description: 'Printed A-line Kurta',
     price: 800,
     designer: 2,
+    likes: 34,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/hfe/h50/11209124085790/-473Wx593H-460188339-indigo-MODEL.jpg',
     category: 'kurta'
@@ -305,6 +331,7 @@ const products = [
     description: 'Fuschia Flared Kurta',
     price: 1900,
     designer: 3,
+    likes: 29,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/h41/h4f/10411112005662/-473Wx593H-460058780-fuchsia-MODEL.jpg',
     category: 'kurta'
@@ -314,6 +341,7 @@ const products = [
     description: 'Straight Kurta with Pussy Bow',
     price: 1900,
     designer: 4,
+    likes: 10,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/ha4/h5a/10498574516254/-473Wx593H-460089623-olive-MODEL.jpg',
     category: 'kurta'
@@ -323,6 +351,7 @@ const products = [
     description: 'Cropped Pleated Palazzo Pants',
     price: 1900,
     designer: 1,
+    likes: 66,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/h4d/h24/11308843335710/-473Wx593H-460159446-coral-MODEL4.jpg',
     category: 'kurta'
@@ -332,6 +361,7 @@ const products = [
     description: 'Handblock Print Kalamkari Cotton Palazzos',
     price: 1900,
     designer: 2,
+    likes: 30,
     gender: 'women',
     img: 'https://assets.ajio.com/medias/sys_master/root/h0c/h7a/11397131468830/-473Wx593H-440784111-beige-MODEL.jpg',
     category: 'kurta'

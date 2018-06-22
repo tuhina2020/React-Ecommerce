@@ -6,6 +6,7 @@ import { Icon } from 'react-materialize';
 //Internals
 import PRODUCTS from '../Data/products.js';
 import DESIGNERS from '../Data/designers.js';
+import Heart from '../Heart/heart';
 
 import './index.css';
 
@@ -13,7 +14,7 @@ class ShowProduct extends Component {
   render () {
     const product = find(PRODUCTS, ['id', parseInt(this.props.match.params.id)]);
     const designer = find(DESIGNERS, ['id', get(product, "designer")]);
-    let similar = map(PRODUCTS, (p) => {
+    /* let similar = map(PRODUCTS, (p) => {
       if (
         (p.gender === product.gender || p.designer === product.designer || p.category === product.category)
         && p.type === product.type
@@ -37,11 +38,18 @@ class ShowProduct extends Component {
       else
         return null;
     });
-    similar = compact(similar);
-    console.log(similar)
+    similar = compact(similar); */
+    const similar = [];
+    const heartStyle = {
+      top: "-15em",
+      left: "7em",
+      width: "3em",
+      height: "3em"
+    }
     return (
       <div className="show-product">
         <div className="item-wrapper">
+          <Heart style={heartStyle}/>
           <div className="item-image">
             <img className="product-image" src={product.img} alt="product" />
           </div>

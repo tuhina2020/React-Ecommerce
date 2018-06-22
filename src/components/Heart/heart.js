@@ -1,6 +1,14 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-import './heart.css'
+import './heart.css';
+const propTypes = {
+  style: PropTypes.object
+};
+
+const defaultProps = {
+	style: {}
+};
 
 class Heart extends React.Component {
   constructor(props) {
@@ -28,8 +36,11 @@ class Heart extends React.Component {
   }
 
   render() {
-    return (<img src={this.state.image} onClick={ this.btnClick } className={this.state.className} />)
+    return (<img src={this.state.image} onClick={ this.btnClick } className={this.state.className} style={this.props.style}/>)
   }
 }
+
+Heart.propTypes = propTypes;
+Heart.defaultProps = defaultProps;
 
 export default Heart;
