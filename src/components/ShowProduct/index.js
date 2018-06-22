@@ -64,7 +64,7 @@ class ShowProduct extends Component {
             </div>
             <div className="product-review">
                 <img src="/images/like/full.svg" className="likes" style={{width: "2em", height: "2em"}}/>
-                <span style={{fontSize: "3em", marginLeft: "1em"}}>{product.likes} </span>
+                <span style={{fontSize: "3em", marginLeft: "0.33em"}}>{product.likes} </span>
             </div>
           </div>
           <div className="similar-products">
