@@ -21,7 +21,7 @@ const AllItems = ({products}) => (
         </div>
         </Link>
         <div className="price-add">
-          <div className="product-price">&#8377; {product.price}</div>
+          <div className="product-price-list">&#8377; {product.price}</div>
         </div>
       </div>
     ))}

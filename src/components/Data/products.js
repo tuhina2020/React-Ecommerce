@@ -8,6 +8,7 @@ const products = [
     type: "shirt",
     designer: 1,
     likes: 12,
+    tags: ["green"],
     img: "https://assets.ajio.com/medias/sys_master/root/h03/h76/11344430694430/-473Wx593H-460159430-green-MODEL.jpg",
     inCart: false,
     category: "clothes"

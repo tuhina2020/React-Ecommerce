@@ -97,6 +97,11 @@
   color: grey;
 }
 
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .stars {
   display: flex;
 }

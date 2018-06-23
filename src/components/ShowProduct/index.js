@@ -6,7 +6,10 @@ import { Icon } from 'react-materialize';
 //Internals
 import PRODUCTS from '../Data/products.js';
 import DESIGNERS from '../Data/designers.js';
+import TAGS from '../Data/tags.js';
 import Heart from '../Heart/heart';
+import Tag from '../Tag/tags';
+// import Utils from 'Utils';
 
 import './index.css';
 
@@ -14,6 +17,9 @@ class ShowProduct extends Component {
   render () {
     const product = find(PRODUCTS, ['id', parseInt(this.props.match.params.id)]);
     const designer = find(DESIGNERS, ['id', get(product, "designer")]);
+    const selected = TAGS.sort(() => .5 - Math.random()).slice(0, Math.random()* TAGS.length) ;
+    const tags = map(selected, (tag) => <Tag tag={tag}/>);
+
     /* let similar = map(PRODUCTS, (p) => {
       if (
         (p.gender === product.gender || p.designer === product.designer || p.category === product.category)
@@ -62,8 +68,9 @@ class ShowProduct extends Component {
             </div>
             <div className="product-review">
                 <img src="/images/like/full.svg" className="likes" style={{width: "2em", height: "2em"}}/>
-                <span style={{fontSize: "3em", marginLeft: "0.33em"}}>{product.likes} </span>
+                <span style={{fontSize: "1.5em", marginLeft: "0.33em"}}>{product.likes} </span>
             </div>
+            <div className="product-tags">{tags}</div>
           </div>
         </div>
       </div>

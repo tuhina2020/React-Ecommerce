@@ -13,6 +13,11 @@ module.exports = {
   devtool: "source-map",
   target: "web",
   mode: "production",
+  resolve: {
+    alias: {
+      Utils: path.resolve(__dirname, "/src/utils")
+    }
+  },
   module: {
     rules: [
       {

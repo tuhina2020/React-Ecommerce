@@ -10,6 +10,13 @@ module.exports = {
     publicPath: '/',
     filename: "bundle.js"
   },
+  resolve: {
+    alias: {
+      Utils: path.resolve(__dirname, "src/utils")
+    },
+    symlinks: false,
+    cacheWithContext: false
+  },
   devtool: "source-map",
   target: "web",
   mode: "production",
@@ -17,6 +24,7 @@ module.exports = {
     rules: [
       {
   	    test: /\.js$/,
+        include: path.resolve(__dirname, 'src'),
   	    loader: 'babel-loader',
   	    exclude: /node_modules/
   	  },

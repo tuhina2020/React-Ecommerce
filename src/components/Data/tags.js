@@ -1,0 +1,3 @@
+const tags = ["designer", "fashionable", "fashionaddict", "fashionblog", "fashiondiaries", "fashiongram", "fashionpost", "fashionstyle", "instastyle", "look", "lookbook", "lookoftheday", "outfitoftheday", "style", "styleblogger", "stylish", "trend", "trendy", "whatiwore", "wiw", "wiwt", "currentlywearing", "fashiondaily", "fashionlover", "fblogger", "mylook", "ootdshare", "outfitpost", "styleoftheday", "todayimwearing", "todaysoutfit", "whatiworetoday"];
+
+export default tags;
