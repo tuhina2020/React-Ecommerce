@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
   height: 3em;
-  border-style: solid none;
+  /*border-style: solid none;
   border-width: 1px;
-  border-color: black;
+  border-color: black;*/
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
   list-style: none;
   width: 90vw;
   justify-content: center;
-  height: 3em;
+  height: 45px;
   align-items: center;
   font-family: 'Quicksand', sans-serif;
 }
@@ -25,7 +25,7 @@
   padding: 0 1em;
   color: black;
   transition: 0.5s;
-  height: 3em;
+  height: 45px;
   font-size: 1.5em;
 }
 

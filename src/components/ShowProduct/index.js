@@ -67,10 +67,6 @@ class ShowProduct extends Component {
                 <span style={{fontSize: "3em", marginLeft: "0.33em"}}>{product.likes} </span>
             </div>
           </div>
-          <div className="similar-products">
-              {!isEmpty(similar) ? <div style={{marginLeft: "1em"}}>YOU MAY ALSO LIKE </div> : null}
-              {similar}
-          </div>
         </div>
       </div>
     );
