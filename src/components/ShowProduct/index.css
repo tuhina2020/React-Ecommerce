@@ -100,6 +100,8 @@
 .product-tags {
   display: flex;
   flex-wrap: wrap;
+  max-width: 30em;
+  flex: 1 1 auto;
 }
 
 .stars {
