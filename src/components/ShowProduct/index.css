@@ -53,6 +53,7 @@
 
 .product-price {
   font-size: 2em;
+  display: flex;
 }
 
 .show-product .product-image {

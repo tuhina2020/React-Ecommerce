@@ -63,7 +63,6 @@ class ShowProduct extends Component {
             </Link>
             <div className="product-name">{product.name}</div>
             <div className="product-bio">
-              <p className="product-description">{product.description}</p>
               <p className="product-price">&#8377; {product.price}</p>
             </div>
             <div className="product-review">
