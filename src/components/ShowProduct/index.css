@@ -11,6 +11,7 @@
   align-items: end;
   height: 40em;
   margin: auto;
+  margin-top: 2em;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -38,6 +39,7 @@
 
 .product-details .product-name {
   font-size: 1em;
+  display: flex;
 }
 
 .product-description {
@@ -46,6 +48,7 @@
   color: grey;
   font-weight: lighter;
   margin: 0;
+  display: flex;
 }
 
 .product-price {
@@ -60,6 +63,10 @@
   font-size: 1.2em;
   border: none;
   font-family: 'Quicksand', sans-serif;
+}
+
+.product-bio {
+  display: flex;
 }
 
 .item-name .product-description {
