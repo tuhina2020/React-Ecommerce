@@ -39,9 +39,7 @@ class ShowProduct extends Component {
         return null;
     });
     similar = compact(similar); */
-    const similar = [];
     const heartStyle = {
-      top: "-15em",
       left: "5em",
       width: "3em",
       height: "3em"

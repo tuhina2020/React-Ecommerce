@@ -40,10 +40,8 @@
   font-family: 'Tajawal', sans-serif;
   font-size: 3em;
   color: black;
-  position: relative;
-  left: 45%;
 }
 
 .top {
-  display: flex;
+  text-align: center;
 }

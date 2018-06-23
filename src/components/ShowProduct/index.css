@@ -8,9 +8,10 @@
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   height: 40em;
   margin-left: 15em;
+  margin-top: 2em;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -49,7 +50,7 @@
 }
 
 .product-price {
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .show-product .product-image {
@@ -64,6 +65,7 @@
 
 .item-name .product-description {
   font-size: 1em;
+  visibility: hidden;
 }
 
 .item-name .dot {
@@ -80,7 +82,7 @@
   font-size: 1em;
   position: relative;
   display: flex;
-  top: -10em;
+  /*margin-bottom: 22em;*/
 }
 
 .item-name .product-designer-name {
@@ -91,7 +93,7 @@
 }
 
 .item-name .product-price {
-  font-size: 1em;
+  font-size: 2em;
   color: grey;
 }
 

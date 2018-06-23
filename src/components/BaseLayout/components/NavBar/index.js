@@ -18,9 +18,6 @@ export default class Navbar extends React.Component {
         <div>
           <div className="top">
             <NavLink id="logo" to="/">ModAlle</NavLink>
-            <div id="search">
-              <Search />
-            </div>
           </div>
           <nav className="navbar">
             <div className="nav-links">

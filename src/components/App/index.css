@@ -2,6 +2,11 @@
 	width: 100%;
 }
 
+.slick-dots {
+	position: relative;
+    top: 1em;
+}
+
 .sample {
 	margin-left: auto;
 	margin-right: auto;
