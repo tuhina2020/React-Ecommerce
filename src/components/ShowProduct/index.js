@@ -17,7 +17,7 @@ class ShowProduct extends Component {
   render () {
     const product = find(PRODUCTS, ['id', parseInt(this.props.match.params.id)]);
     const designer = find(DESIGNERS, ['id', get(product, "designer")]);
-    const selected = TAGS.sort(() => .5 - Math.random()).slice(0, Math.random()* TAGS.length) ;
+    const selected = TAGS.sort(() => .5 - Math.random()).slice(0, Math.max(Math.random()* TAGS.length, 8)) ;
     const tags = map(selected, (tag) => <Tag tag={tag}/>);
 
     /* let similar = map(PRODUCTS, (p) => {
