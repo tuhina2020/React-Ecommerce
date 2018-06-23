@@ -3,6 +3,7 @@ import React from 'react';
 import { Icon } from 'react-materialize';
 import { Link } from 'react-router-dom';
 import map from 'lodash/map';
+import get from 'lodash/get';
 import Heart from '../../Heart/heart';
 //Internals
 
@@ -17,7 +18,7 @@ const AllItems = ({products}) => (
         </div>
         <div className="product-details">
           <div className="product-name">{product.name}</div>
-          <div className="product-description">{product.description.slice(0,22) + "..."}</div>
+          <div className="product-description">{get(product, "description", "").slice(0,22) + "..."}</div>
         </div>
         </Link>
         <div className="price-add">
