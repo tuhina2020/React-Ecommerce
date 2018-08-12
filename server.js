@@ -8,6 +8,7 @@ let compression = require("compression");
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(compression());
+app.use(express.static(path.resolve(__dirname, 'public', 'images')));
 app.use(express.static(path.resolve(__dirname, "public", "css")));
  
 app.get("*", function(req, res) {
